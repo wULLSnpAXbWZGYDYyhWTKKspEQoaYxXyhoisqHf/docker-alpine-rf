@@ -1,5 +1,16 @@
 FROM python:3.9-rc-alpine
 
+ARG BUILD_DATE
+ARG VCS_REF
+
+LABEL description="Docker image for running tests using robot framework."
+
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.vcs-url="https://github.com/wULLSnpAXbWZGYDYyhWTKKspEQoaYxXyhoisqHf/docker-alpine-rf.git" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.license=GPL-3.0
+
+
 RUN apk -U upgrade
 RUN apk add --no-cache \
     udev \
