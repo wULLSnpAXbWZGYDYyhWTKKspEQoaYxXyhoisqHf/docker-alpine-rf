@@ -37,6 +37,9 @@ RUN adduser -u ${ROBOT_UID} -D -H ${ROBOT_NAME}
 
 RUN mkdir -pv /testing
 
+RUN echo 'PS1="\e[1;36m❄ \e[1;31m\u@\e[1;34malpine-rf \e[1;32m\w\e[m \n➜ "' >> ~/.bashrc \
+    && echo 'source ~/.bashrc' >> ~/.bash_profile
+
 ENV SCREEN_WIDTH 1920
 ENV SCREEN_HEIGHT 1080
 ENV SCREEN_DEPTH 16
