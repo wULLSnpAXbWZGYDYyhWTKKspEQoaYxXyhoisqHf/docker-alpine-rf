@@ -22,7 +22,8 @@ RUN apk add --no-cache \
 RUN pip install --no-cache-dir \
   robotframework \
   robotframework-selenium2library \
-  selenium
+  selenium \
+  b2
 
 # Chrome requires docker to have cap_add: SYS_ADMIN if sandbox is on.
 # Disabling sandbox and gpu as default.
