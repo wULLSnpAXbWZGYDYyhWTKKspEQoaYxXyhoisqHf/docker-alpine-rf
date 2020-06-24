@@ -18,6 +18,7 @@ RUN apk add --no-cache \
     chromium-chromedriver \
     xvfb \
     bash
+RUN apk add --no-cache b3sum b2sum --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 RUN pip install --no-cache-dir \
   robotframework \
