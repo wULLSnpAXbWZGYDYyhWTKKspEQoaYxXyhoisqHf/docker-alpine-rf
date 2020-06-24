@@ -15,3 +15,4 @@ This repository provides the Dockerfile to create a container image for [robotfr
 * chrome driver
 * bash as kind of a convenience (the alpine-based python image has busybox as a default shell)
 * `rf` user (uid==1000) that can be used to run tests (instead of `root`)
+* b3sum and b2sum
