@@ -7,6 +7,9 @@
 
 This repository provides the Dockerfile to create a container image for [robotframework](https://robotframework.org) website testing.
 
+push mirror lives in [this GitHub repo](https://github.com/wULLSnpAXbWZGYDYyhWTKKspEQoaYxXyhoisqHf/docker-alpine-rf)  
+development happens on [this Gitea instance](https://git.dotya.ml/wanderer/docker-alpine-rf)
+
 ## What you get
 * updated python[`:3.9-rc-alpine`](https://hub.docker.com/_/python) image
 * robot framework
