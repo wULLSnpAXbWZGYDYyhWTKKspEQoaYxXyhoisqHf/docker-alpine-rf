@@ -17,7 +17,7 @@ trigger:
     - tag
     - cron
     cron:
-      - hourly-build
+      - "hourly-build"
 
 steps:
 - name: call webhook
