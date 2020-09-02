@@ -15,12 +15,8 @@ trigger:
   event:
     - push
     - cron
-  target:
-    exclude:
-    - nightly
-  status:
-    - success
-    - failure
+    cron:
+      - hourly-build
 
 steps:
 - name: call webhook
@@ -51,9 +47,6 @@ trigger:
     - cron
   cron:
     - nightly
-  status:
-    - success
-    - failure
 
 steps:
 - name: call webhook
