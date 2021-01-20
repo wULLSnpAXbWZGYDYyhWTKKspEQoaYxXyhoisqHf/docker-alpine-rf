@@ -1,4 +1,4 @@
-FROM python:3.9-rc-alpine
+FROM python:3.10-rc-alpine3.12
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -28,7 +28,7 @@ RUN pip install --no-cache-dir \
 
 # Chrome requires docker to have cap_add: SYS_ADMIN if sandbox is on.
 # Disabling sandbox and gpu as default.
-RUN sed -i "s/self._arguments\ =\ \[\]/self._arguments\ =\ \['--no-sandbox',\ '--disable-gpu'\]/" /usr/local/lib/python3.9/site-packages/selenium/webdriver/chrome/options.py
+RUN sed -i "s/self._arguments\ =\ \[\]/self._arguments\ =\ \['--no-sandbox',\ '--disable-gpu'\]/" /usr/local/lib/python3.10/site-packages/selenium/webdriver/chrome/options.py
 
 ENV ROBOT_UID 1000
 ENV ROBOT_NAME rf
