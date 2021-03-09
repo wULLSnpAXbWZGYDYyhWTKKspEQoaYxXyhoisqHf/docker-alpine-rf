@@ -11,7 +11,7 @@ push mirror lives in [this GitHub repo](https://github.com/wULLSnpAXbWZGYDYyhWTK
 development happens on [this Gitea instance](https://git.dotya.ml/wanderer/docker-alpine-rf)
 
 ## What you get
-* updated python[`:3.10-rc-alpine3.12`](https://hub.docker.com/_/python) image
+* updated python[`:3.10-rc-alpine3.13`](https://hub.docker.com/_/python) image
 * robot framework
 * selenium library
 * chromium
